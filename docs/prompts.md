@@ -52,11 +52,4 @@ Actúa como un UI/UX Designer experto en sistemas de diseño modernos y de alto 
 ### Instrucciones de Layout:
   - Prioriza la legibilidad bajo luz de gimnasio (alto contraste).
   - Usa --surface-shadow para dar relieve a los elementos interactivos.
-  - Mantén un espaciado (Padding/Gap) generoso para facilitar el uso con manos sudorosas o en movimiento."
-  
----
-  
-## Unas notas sobre tu paleta OKLCH:
-  + El Accent: Tu color oklch(93.95% 0.2231 120.04) es un tono amarillento-verdoso muy luminoso (L=94%), lo cual es perfecto porque "brillará" sobre el fondo oscuro (L=12%). Es el equivalente perfecto al "Volt Neon".
-
-  + La Superficie: Has definido la superficie con una luminosidad del 21%, lo que creará un contraste sutil pero elegante contra el fondo del 12%.
+  - Mantén un espaciado (Padding/Gap) generoso para facilitar el uso con manos sudorosas o en movimiento.

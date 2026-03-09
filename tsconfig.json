@@ -5,6 +5,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@shared/*": ["./src/modules/shared/*"],
+      "@exercises/*": ["./src/modules/exercises/*"],
     },
   },
   "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],

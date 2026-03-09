@@ -5,6 +5,7 @@ import { drizzle } from "drizzle-orm/expo-sqlite";
 import { useMigrations } from "drizzle-orm/expo-sqlite/migrator";
 import migrations from "../../../drizzle/migrations";
 import { LoadingApp } from "@shared/components/loading-app";
+import { seedExercises } from "./seed";
 
 let _db: ReturnType<typeof drizzle> | null = null;
 
@@ -25,6 +26,8 @@ export function DBProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (__DEV__ && success) {
+      seedExercises();
+
       console.log("[DB] Migrations applied successfully");
     }
   }, [success]);

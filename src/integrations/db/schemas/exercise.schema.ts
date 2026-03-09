@@ -11,6 +11,7 @@ export const exercise = sqliteTable(
     isUnilateral: integer("is_unilateral", {
       mode: "boolean",
     }).notNull(),
+    imageUrl: text("image_url"),
 
     ...auditMetadata,
   },

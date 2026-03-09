@@ -8,23 +8,17 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { Integrations } from "@/integrations";
 
 export default function RootLayout() {
-  const [accent, accentForeground] = useThemeColor([
-    "accent",
-    "accent-foreground",
-  ]);
+  const [accent, background] = useThemeColor(["accent", "background"]);
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Integrations>
-        <StatusBar
-          barStyle="light-content"
-          backgroundColor={accentForeground}
-        />
+        <StatusBar barStyle="light-content" backgroundColor={background} />
         <Stack
           screenOptions={{
             headerTintColor: accent,
             headerStyle: {
-              backgroundColor: accentForeground,
+              backgroundColor: background,
             },
             headerShown: false,
           }}

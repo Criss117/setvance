@@ -1,10 +1,24 @@
-import { View } from "react-native";
-import { Button } from "heroui-native/button";
+import { ScrollView } from "react-native";
+import { Card } from "heroui-native/card";
+import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 
-export default function Index() {
+const items = Array.from({ length: 20 }).map((_, index) => ({
+  name: "Persona " + index,
+}));
+
+export default function Sessions() {
+  const bh = useBottomTabBarHeight();
+
   return (
-    <View className="flex-1 justify-center items-center">
-      <Button>Crear ejercicio</Button>
-    </View>
+    <ScrollView contentContainerClassName="gap-y-5 pb-24">
+      {items.map((item) => (
+        <Card key={item.name}>
+          <Card.Header>
+            <Card.Title>{item.name}</Card.Title>
+            <Card.Description>{bh}</Card.Description>
+          </Card.Header>
+        </Card>
+      ))}
+    </ScrollView>
   );
 }
